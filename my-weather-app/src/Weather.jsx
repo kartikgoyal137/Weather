@@ -55,7 +55,7 @@ function Weather()
             
           <section className="main">
             
-            <div className={`temp ${(t<20) ? "blue" : (t>35) ? "red" : "green"}`}>
+            <div className={`temp ${(t<20) ? "red" : (t>35) ? "green" : "blue"}`}>
                 {weatherData ? weatherData.current.temp_c : "Loading..."}°C
             </div>
 
@@ -69,11 +69,12 @@ function Weather()
             </div>
 
             <div className="other">
-                Humidity : {weatherData ? weatherData.current.humidity : ""} % &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Wind speed : {weatherData ? weatherData.current.wind_kph : ""} kph
+                <div>Humidity : {weatherData ? weatherData.current.humidity : ""} % </div>
+                <div>Wind speed : {weatherData ? weatherData.current.wind_kph : ""} kph </div>
             </div>
 
           </section>
+          
 
         </div>
     )
