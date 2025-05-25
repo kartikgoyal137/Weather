@@ -1,0 +1,73 @@
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: 0.5s;
+  margin : 0px 20px
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: #646cff;
+}
+
+.header {
+    display: flex;
+    width: 90vw;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    display: inline-block;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.temp {
+    font-size: 5em;
+    font-weight: 650;
+}
+
+.condition {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.condition h1 {
+    font-weight: 750;
+}
+
+.other {
+    font-size: 1.5em;
+}
+
+.red {
+    color: orangered;
+}
+.green {
+    color: green;
+}
+.blue {
+    color: cyan;
+}
